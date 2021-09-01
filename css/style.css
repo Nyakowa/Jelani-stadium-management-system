@@ -1,3 +1,8 @@
+.logo img {
+  border-radius: 40%;
+  height: 100px;
+  float: left;
+}
 .header h1 {
   text-align: center;
   word-spacing: normal;
@@ -73,19 +78,31 @@
 }
 /* ------form--------*/
 .form {
-  width: 350px;
+  width: 360px;
   position: relative;
   margin: 6% auto;
   background: #fff;
   padding: 5px;
   box-sizing: border-box;
   float: right;
-  height: 70vh;
+  height: 75vh;
   font-family: sans-serif;
   font-size: 12px;
   overflow: hidden;
   border-radius: 2%;
   box-shadow: 0 0 20px #ffff00;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-success {
+  color: green;
+}
+
+.alert-success {
+  color: green;
 }
 
 .input-group p {
@@ -166,6 +183,7 @@
   border-bottom: 1px solid #999;
   outline: none;
   background: transparent;
+  height: 9vh;
 }
 .submit-btn {
   width: 120px;
@@ -193,6 +211,10 @@ span {
   left: 450px;
 }
 /*----------------section----------*/
+
+#more {
+  display: none;
+}
 .col-1,
 .col-2,
 .col-3 {
@@ -301,6 +323,12 @@ span {
   font-weight: bold;
   font-size: 18px;
 }
+.highlight-1 h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: gold;
+}
 
 hr.solid {
   border-top: 3px solid #ff8c00;
@@ -349,6 +377,15 @@ hr.solid {
   background-position: center;
   backface-visibility: visible;
   height: 70vh;
+}
+.highlight-1 {
+  background-image: url(../images/concert1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  backface-visibility: visible;
+  height: 80vh;
+  margin-top: 50px;
 }
 
 /* Clear floats after the columns */
@@ -540,35 +577,43 @@ hr.hr-1 {
 
 /*----------book ticket modal-----------*/
 
-.register {
+.book-cont {
+  background-image: url(../images/guilher.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+.modal-book {
   padding: 10px;
-  background-color: rgba(0, 0, 0, 8);
-  float: right;
+  background-color: transparent;
   border-radius: 2px;
-  box-shadow: 0 0 20px #00ced1;
+  box-shadow: 0 0 20px #f4fafa;
   color: #fff;
   height: 67vh;
-  margin-left: 0.3cm;
-  width: 30%;
+  width: 65%;
   border-radius: 1cm;
   font-size: 25px;
   font-family: georgia;
-  position: absolute;
-  z-index: 2;
-  left: 3;
-}
-.register h4 {
+  margin-top: 35vh;
+  margin-left: 40vh;
   text-align: center;
-  text-decoration: underline;
+}
+.modal-book h4 {
+  text-align: center;
+  text-decoration: none;
   color: dodgerblue;
   font-weight: bold;
+  background-color: rgb(255, 255, 0);
+  color: #000;
+  padding-top: 25px;
 }
-.register a {
+.modal-book a {
   color: #00ced1;
   text-decoration: none;
   font-style: italic;
 }
-.register input[type="number"],
+.modal-book input[type="number"],
 input[type="datetime-local"] {
   width: 50%;
   height: 3vh;
@@ -659,8 +704,192 @@ hr.hr-3 {
   height: 50vh;
   padding-top: 20px;
   color: rgba(255, 255, 255, 0.801);
+  margin-top: 50px;
 }
 .newsletter a {
   text-decoration: none;
   color: #111;
+}
+/*------------------contact us--------------*/
+.contact-page {
+  background-image: url(../images/cont4.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.contact-us {
+  box-sizing: border-box;
+  width: 50%;
+  margin-left: 300px;
+  background-color: #fff;
+  height: 90vh;
+}
+.contact1 {
+  background-image: url(../images/contact2.jpg);
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+}
+.wrap-contact {
+  margin-top: 50px;
+  text-align: center;
+}
+.contact100-form-title-1,
+.contact100-form-title-2 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: Georgia;
+}
+.contact100-form {
+  font-size: 70px;
+}
+.contact100-form p {
+  font-size: 20px;
+  color: #999;
+  font-family: Georgia;
+}
+.contact100-form input[type="text"],
+input[type="email"] {
+  height: 4vh;
+  width: 29%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+/*------Registration Form------*/
+#regForm {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin: auto;
+  width: 40%;
+  margin-top: 5%;
+  width: 100px;
+  height: 150vh;
+  min-width: 800px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#regForm h1 {
+  background-color: #000000;
+  text-align: center;
+  word-spacing: normal;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  font-family: georgia;
+  padding: 5%;
+  width: 90%;
+}
+
+.submit-btnevents {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 0);
+  padding: 10px 50px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 50%;
+  float: right;
+}
+
+.submit-btnevents:hover {
+  opacity: 1;
+}
+
+input {
+  padding: 10px;
+  width: 95%;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid #aaaaaa;
+}
+
+.tab {
+  margin-left: 15px;
+}
+/*-----------contact--------------*/
+.profile {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 130px;
+  background-image: url(../images/stad.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+  height: 100vh;
+  font-family: Georgia;
+}
+.profile p {
+  color: #fff;
+}
+.btn-8 {
+  background-color: #000;
+  width: 8cm;
+  height: 5vh;
+  border-radius: 1cm;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile h1 {
+  background-color: #fff;
+  color: #000;
+}
+.profile a {
+  text-decoration: none;
+  color: #fff;
+}
+box1 {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 0 15px 0;
+  background-color: #30475e;
+}
+.div1 {
+  display: inline-block;
+}
+.box2 {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 0 15px 0;
+  background-color: #30475e;
+}
+.acc-form {
+  width: 600px;
+  margin: 100px auto 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px o #e6320e, 0 4px 8px 0 #f51008;
+  color: #8ac2e2;
+  margin-bottom: 200px;
+}
+.btn-9 {
+  background-color: rgb(88, 230, 6);
+  width: 8cm;
+  height: 5vh;
+  border-radius: 1cm;
+  color: #000;
+  cursor: pointer;
+}
+@media screen and max-width: 600px;
+ {
+  body {
+    padding: 20px;
+  }
+  form {
+    width: 100%;
+  }
+  .div1 {
+    display: block;
+  }
+  .box2 {
+    width: 100%;
+  }
 }
